@@ -1,0 +1,281 @@
+body{
+    scroll-behavior: smooth;
+}
+.logo{
+font-family: 'Antic', sans-serif;
+font-family: 'Italiana', serif;
+position: absolute;
+bottom: 50%;
+left: 30%;
+font-size: 100px;
+}
+.contain{
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.arrow{
+    width: 4%;
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+    color: black;
+}
+.amenities{
+font-family: 'Antic', sans-serif;
+font-family: 'Italiana', serif;
+padding: 5% 0% 5% 5%;
+font-size: 40px;
+}
+
+.grid-container{
+    display: grid;
+    width: 80%;
+    border-bottom: 1px solid;
+    margin-left: 9%;
+}
+.grid-item{
+    padding: 3%;
+    font-family: 'Italiana', serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.specifications{
+    font-family: 'Antic', sans-serif;
+    font-family: 'Italiana', serif;
+    padding: 2% 0% 2% 5%;
+    font-size: 40px;
+    }
+.specgrid{
+    display: grid;
+    width: 80%;
+    border-bottom: 1px solid;
+    margin-left: 9%;
+    padding-bottom: 2%;
+}
+.specgrid-item{
+    padding: 3%;
+    font-family: 'Italiana', serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.units{
+    font-family: 'Antic', sans-serif;
+    font-family: 'Italiana', serif;
+    padding: 2% 0% 2% 5%;
+    font-size: 40px;
+}
+.card{
+    font-family: 'Antic', sans-serif;
+    font-family: 'Italiana', serif;
+    margin: 3rem;
+    margin-left: 35%;
+    text-align: center
+}
+.card-title{
+    font-weight: 600;
+    font-size: 50px;
+    font-family: 'Inter', sans-serif;
+}
+.card-subtitle{
+    padding: 3%;
+    border-bottom: 1px solid gold;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+}
+.card-text{
+    font-family: 'Antic', sans-serif;
+    font-family: 'Italiana', serif;
+    font-size: 20px;
+}
+
+.adv{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    border-bottom: 1px solid;
+    margin: 2% 9% 2% 9%;
+}
+
+.instructions{
+    font-family: 'Antic', sans-serif;
+    font-family: 'Italiana', serif;
+    padding: 0% 0% 0% 5%;
+    font-size: 40px;
+}
+li{
+    padding: 2%;
+}
+.list{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 2% 9% 2% 9%;
+    border-bottom: 1px solid;
+}
+
+.gnd{
+    width: 100%;
+    margin: auto ;
+}
+
+.contact{
+    font-family: 'Antic', sans-serif;
+    font-family: 'Italiana', serif;
+    padding: 0% 0% 0% 5%;
+    font-size: 40px;
+}
+.details{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin: 2% 9% 2% 9%;
+    border-bottom: 1px solid;
+}
+
+/*FOR MOBILE VERSION*/
+
+@media only screen and (max-width: 600px) {
+    body{
+        scroll-behavior: smooth;
+    }
+    .logo{
+    font-family: 'Antic', sans-serif;
+    font-family: 'Italiana', serif;
+    position: absolute;
+    bottom: 40%;
+    left: 16%;
+    font-size: 68px;
+    }
+    .contain{
+        height: 810px;
+        width: 110%;
+        position: relative;
+    }
+    .arrow{
+        width: 8%;
+        position: absolute;
+        bottom: 0%;
+        left: 53%;
+        color: black;
+    }
+    .amenities{
+    font-family: 'Antic', sans-serif;
+    font-family: 'Italiana', serif;
+    padding: 15% 0% 2% 5%;
+    font-size: 38px;
+    }
+
+    .grid-container{
+        display: grid;
+        margin: 14%;
+        border-bottom: 1px solid;
+    }
+    .grid-item{
+        padding: 5%;
+        width: 125%;
+        font-family: 'Italiana', serif;
+        font-size: 25px;
+        text-align: center;
+        margin-left: -12%;
+    }
+    
+    .specifications{
+        font-family: 'Antic', sans-serif;
+        font-family: 'Italiana', serif;
+        padding: 2% 0% 2% 5%;
+        font-size: 38px;
+        }
+    .specgrid{
+        display: grid;
+        width: 90%;
+        border-bottom: 1px solid;
+        margin-left: 10%;
+        padding-bottom: 2%;
+    }
+    .specgrid-item{
+        padding: 5%;
+        font-family: 'Italiana', serif;
+        font-size: 22px;
+        text-align: left;
+    }
+    
+    .units{
+        font-family: 'Antic', sans-serif;
+        font-family: 'Italiana', serif;
+        padding: 10% 0% 2% 5%;
+        font-size: 38px;
+    }
+    .card{
+        font-family: 'Antic', sans-serif;
+        font-family: 'Italiana', serif;
+        margin-left: 15%;
+        text-align: center
+    }
+    .card-title{
+        font-weight: 600;
+        font-size: 50px;
+        font-family: 'Inter', sans-serif;
+    }
+    .card-subtitle{
+        padding: 3%;
+        border-bottom: 1px solid gold;
+        font-size: 30px;
+        font-family: 'Inter', sans-serif;
+    }
+    .card-text{
+        font-family: 'Antic', sans-serif;
+        font-family: 'Italiana', serif;
+        font-size: 25px;
+    }
+    
+    .adv{
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        text-align: left;
+        width: 90%;
+        border-bottom: 1px solid;
+        margin: 2% 10% 2% 10%;
+        padding-bottom: 5%;
+    }
+    
+    .instructions{
+        font-family: 'Antic', sans-serif;
+        font-family: 'Italiana', serif;
+        padding: 10% 0% 0% 5%;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    li{
+        padding: 3%;
+    }
+    .list{
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        width: 90%;
+        margin-left:10%;
+        border-bottom: 1px solid;
+    }
+    
+    .gnd{
+        width: 100%;
+        margin-top: 50%;
+    }
+    
+    .contact{
+        font-family: 'Antic', sans-serif;
+        font-family: 'Italiana', serif;
+        padding: 8% 0% 0% 5%;
+        font-size: 38px;
+    }
+    .details{
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        width: 90%;
+        margin-left: 10%;
+        border-bottom: 1px solid;
+        padding-bottom: 8%;
+    }
+  }
