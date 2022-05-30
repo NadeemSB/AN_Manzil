@@ -151,7 +151,7 @@ li{
     }
     .contain{
         height: 900px;
-        width: 100%;
+        width: 110%;
         position: relative;
     }
     .arrow{
@@ -170,7 +170,7 @@ li{
 
     .grid-container{
         display: grid;
-        margin: 14%;
+        margin: 5%;
         border-bottom: 1px solid;
     }
     .grid-item{
@@ -179,7 +179,7 @@ li{
         font-family: 'Inter', sans-serif;
         font-size: 25px;
         text-align: center;
-        margin-left: -12%;
+       
     }
     
     .specifications{
