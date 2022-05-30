@@ -151,7 +151,7 @@ li{
     }
     .contain{
         height: 900px;
-        width: 110%;
+        width: 100%;
         position: relative;
     }
     .arrow{
