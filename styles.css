@@ -150,7 +150,7 @@ li{
     font-size: 68px;
     }
     .contain{
-        height: 810px;
+        height: 900px;
         width: 110%;
         position: relative;
     }
@@ -174,9 +174,9 @@ li{
         border-bottom: 1px solid;
     }
     .grid-item{
-        padding: 5%;
+        padding: 6%;
         width: 125%;
-        font-family: 'Italiana', serif;
+        font-family: 'Inter', sans-serif;
         font-size: 25px;
         text-align: center;
         margin-left: -12%;
@@ -190,14 +190,14 @@ li{
         }
     .specgrid{
         display: grid;
-        width: 90%;
+        width: 80%;
         border-bottom: 1px solid;
         margin-left: 10%;
         padding-bottom: 2%;
     }
     .specgrid-item{
-        padding: 5%;
-        font-family: 'Italiana', serif;
+        padding: 3%;
+        font-family: 'Inter', sans-serif;
         font-size: 22px;
         text-align: left;
     }
@@ -235,7 +235,7 @@ li{
         font-family: 'Inter', sans-serif;
         font-size: 18px;
         text-align: left;
-        width: 90%;
+        width: 80%;
         border-bottom: 1px solid;
         margin: 2% 10% 2% 10%;
         padding-bottom: 5%;
@@ -254,7 +254,7 @@ li{
     .list{
         font-family: 'Inter', sans-serif;
         font-size: 18px;
-        width: 90%;
+        width: 80%;
         margin-left:10%;
         border-bottom: 1px solid;
     }
@@ -273,7 +273,7 @@ li{
     .details{
         font-family: 'Inter', sans-serif;
         font-size: 20px;
-        width: 90%;
+        width: 80%;
         margin-left: 10%;
         border-bottom: 1px solid;
         padding-bottom: 8%;
