@@ -8,101 +8,247 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Antic&family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <img class="contain" src="marble-m.jpg" alt="background">
-    </div>
-    <div class="logo">AN MANZIL</div>
-
-    <div class="amenities">AMENITIES</div>
-    <div class="grid-container">
-        <div class="grid-item"><img class="lift" style="width: 60%; margin-bottom:-2%;" src="otis.jpg" alt=""></div>
-        <div class="grid-item">6 Passenger Elevator</div>
-        <div class="grid-item"><img class="water" style="width: 70%; margin-bottom:-2%;; border-radius: 12px;" src="splashing-165192_1280.jpg" alt=""></div>
-        <div class="grid-item">Underground Water</div>
-        <div class="grid-item"><img class="hallway" style="width: 70%; margin-bottom:-2%;; border-radius: 12px;" src="hallway-3341001_1920.jpg" alt=""></div>
-        <div class="grid-item">Contemporary Interiors</div>
-    </div>
-
-    <div class="specifications">SPECIFICATIONS</div>
-    <div class="specgrid">
-        <div class="specgrid-item">Spacious Living space with vaastu architecture along <span style="text-decoration: underline;">TV Unit </span>and provision for dining area.</div>
-        <div class="specgrid-item">Master Bedroom with attached bathroom, dressing unit and <span style="text-decoration: underline;"> designer wardrobes </span>
-            and loft storage in all bedrooms.</div>
-        <div class="specgrid-item">Common <span style="text-decoration: underline;"> bathroom furnished </span>with Western commode and geyser.</div>
-        <div class="specgrid-item">Fully-fitted <span style="text-decoration: underline;"> designer kitchen </span>with high and low cabinets, natural stone worktop and
-            sink.</div>
-        <div class="specgrid-item">Furnished LED <span style="text-decoration: underline;"> spotlights</span>, ceiling Fans covering entire household.</div>
-    </div>
-
-    <div class="units">AVAILABLE UNITS</div>
-
-    <div class="card" style="width: 20rem;">
-        <div class="card-body">
-          <h5 class="card-title">₹22,000</h5>
-          <h6 class="card-subtitle mb-2 text-muted">+₹500</h6>
-            <p class="card-text">Ground Floor - 2BHK</p>
-            <p class="card-text"><span style="color:red;">OCCUPIED</span></p>
-          <a href="ground.html" style="border: 1px solid gold; font-size: 20px; font-family: 'Inter', sans-serif; color:white; background-color: black;" class="btn">Virtual</a>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <img class="hero-image" src="marble-m.jpg" alt="AN Manzil Luxury Apartments">
+        <div class="hero-content">
+            <h1 class="logo-title">AN MANZIL</h1>
+            <a href="#available" class="cta-button">Explore Available Units</a>
         </div>
-    </div>
-      
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
 
-      <div class="card" style="width: 20rem;">
-        <div class="card-body">
-          <h5 class="card-title">₹25,000</h5>
-          <h6 class="card-subtitle mb-2 text-muted">+₹1,000</h6>
-          <p class="card-text">Second Floor - 2BHK</p>
-            <p class="card-text"><span style="color:red;">OCCUPIED</span></p>
-          <a href="second.html" style="border: 1px solid gold; font-size: 20px; font-family: 'Inter', sans-serif; color:white; background-color: black;" class="btn">Virtual</a>
+    <!-- Featured Unit Banner -->
+    <section class="featured-banner">
+        <div class="featured-content">
+            <div class="featured-badge">🌟 NOW AVAILABLE</div>
+            <h2 class="featured-title">Third Floor Premium Unit</h2>
+            <p class="featured-description">Experience elevated living with our newly available third floor apartment featuring modern amenities and stunning views</p>
+            <div class="featured-details">
+                <div class="featured-price">₹24,000<span>/month</span></div>
+                <a href="#third-floor-unit" class="featured-cta">View Details →</a>
+            </div>
         </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="section-container">
+        <h2 class="section-title">PREMIUM AMENITIES</h2>
+        <div class="amenities-grid">
+            <div class="amenity-card">
+                <div class="amenity-icon">
+                    <img src="otis.jpg" alt="Elevator">
+                </div>
+                <h3 class="amenity-title">Modern Elevator</h3>
+                <p class="amenity-description">6 Passenger OTIS Elevator for convenient access to all floors</p>
+            </div>
+            <div class="amenity-card">
+                <div class="amenity-icon">
+                    <img src="splashing-165192_1280.jpg" alt="Water Supply">
+                </div>
+                <h3 class="amenity-title">24/7 Water Supply</h3>
+                <p class="amenity-description">Underground water storage ensuring uninterrupted supply</p>
+            </div>
+            <div class="amenity-card">
+                <div class="amenity-icon">
+                    <img src="hallway-3341001_1920.jpg" alt="Interior Design">
+                </div>
+                <h3 class="amenity-title">Contemporary Design</h3>
+                <p class="amenity-description">Elegant interiors with modern finishes throughout</p>
+            </div>
         </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="section-container specifications-section">
+        <h2 class="section-title">APARTMENT SPECIFICATIONS</h2>
+        <div class="specs-grid">
+            <div class="spec-card">
+                <div class="spec-number">01</div>
+                <h3 class="spec-title">Living Space</h3>
+                <p class="spec-description">Spacious living area with vaastu architecture, <strong>TV unit</strong> and dedicated dining space</p>
+            </div>
+            <div class="spec-card">
+                <div class="spec-number">02</div>
+                <h3 class="spec-title">Master Bedroom</h3>
+                <p class="spec-description">Attached bathroom, dressing unit, <strong>designer wardrobes</strong> and loft storage in all bedrooms</p>
+            </div>
+            <div class="spec-card">
+                <div class="spec-number">03</div>
+                <h3 class="spec-title">Modern Bathrooms</h3>
+                <p class="spec-description">Common <strong>bathroom furnished</strong> with Western commode and geyser</p>
+            </div>
+            <div class="spec-card">
+                <div class="spec-number">04</div>
+                <h3 class="spec-title">Designer Kitchen</h3>
+                <p class="spec-description">Fully-fitted <strong>modular kitchen</strong> with cabinets, natural stone worktop and sink</p>
+            </div>
+            <div class="spec-card">
+                <div class="spec-number">05</div>
+                <h3 class="spec-title">Premium Lighting</h3>
+                <p class="spec-description">LED <strong>spotlights</strong> and ceiling fans covering entire household</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Available Units Section -->
+    <section class="section-container units-section" id="available">
+        <h2 class="section-title">AVAILABLE UNITS</h2>
         
-
-        <div class="card" style="width: 20rem;">
-            <div class="card-body">
-              <h5 class="card-title">₹24,000</h5>
-              <h6 class="card-subtitle mb-2 text-muted">+₹500</h6>
-              <p class="card-text">Third Floor - 2BHK</p>
-                <p class="card-text"><span style="color:red;">OCCUPIED</span></p>
-              <a href="thirdR.html" style="border: 1px solid gold; font-size: 20px; font-family: 'Inter', sans-serif; color:white; background-color: black;" class="btn">Virtual</a>
+        <div class="units-container">
+            <!-- Ground Floor -->
+            <div class="unit-card occupied">
+                <div class="unit-status-badge occupied-badge">OCCUPIED</div>
+                <div class="unit-header">
+                    <h3 class="unit-floor">Ground Floor</h3>
+                    <p class="unit-type">2BHK Apartment</p>
+                </div>
+                <div class="unit-pricing">
+                    <div class="unit-price">₹22,000</div>
+                    <div class="unit-maintenance">+₹500 maintenance</div>
+                </div>
+                <a href="ground.html" class="unit-button disabled">View Virtual Tour</a>
             </div>
-          </div>
 
-          <div class="card" style="width: 20rem;">
-            <div class="card-body">
-              <h5 class="card-title">₹24,000</h5>
-              <h6 class="card-subtitle mb-2 text-muted">+₹500</h6>
-              <p class="card-text">Third Floor - 2BHK</p>
-                 <p class="card-text"><span style="color:gold;"><b>AVAILABLE</b></span></p>
-              <a href="thirdF.html" style="border: 1px solid gold; font-size: 20px; font-family: 'Inter', sans-serif; color:white; background-color: black;" class="btn">Virtual</a>
+            <!-- Second Floor -->
+            <div class="unit-card occupied">
+                <div class="unit-status-badge occupied-badge">OCCUPIED</div>
+                <div class="unit-header">
+                    <h3 class="unit-floor">Second Floor</h3>
+                    <p class="unit-type">2BHK Apartment</p>
+                </div>
+                <div class="unit-pricing">
+                    <div class="unit-price">₹25,000</div>
+                    <div class="unit-maintenance">+₹1,000 maintenance</div>
+                </div>
+                <a href="second.html" class="unit-button disabled">View Virtual Tour</a>
             </div>
-          </div>
 
-          <div class="adv">*Advance payment amounting to 10 months of rent to be paid at the time of accommodation.</div>
+            <!-- Third Floor - Rear (Occupied) -->
+            <div class="unit-card occupied">
+                <div class="unit-status-badge occupied-badge">OCCUPIED</div>
+                <div class="unit-header">
+                    <h3 class="unit-floor">Third Floor - Rear</h3>
+                    <p class="unit-type">2BHK Apartment</p>
+                </div>
+                <div class="unit-pricing">
+                    <div class="unit-price">₹24,000</div>
+                    <div class="unit-maintenance">+₹500 maintenance</div>
+                </div>
+                <a href="thirdR.html" class="unit-button disabled">View Virtual Tour</a>
+            </div>
 
-    <div class="instructions">Instructions to the accommodators:</div>
-    <ul class="list">
-        <li>Maintenance charges include housekeeping charges for cleaning and maintaining the common area, electricity consumption in common area and parking. BWSSB water charges for kitchen area.</li>
-        <li>Water pumping charges to be shared among the tenants.</li>
-        <li>Parking provision for 2 two-wheelers.</li>
-        <li>Elevator provision for passengers and hand-held luggage only.</li>
-       <!--<li>Provision for party lobby at terrace floor at two days prior notice.</li>-->
-        </ul>
+            <!-- Third Floor - Front (AVAILABLE) -->
+            <div class="unit-card available featured-unit" id="third-floor-unit">
+                <div class="unit-status-badge available-badge">
+                    <span class="pulse-dot"></span>
+                    AVAILABLE NOW
+                </div>
+                <div class="featured-ribbon">FEATURED</div>
+                <div class="unit-header">
+                    <h3 class="unit-floor">Third Floor - Front</h3>
+                    <p class="unit-type">2BHK Premium Apartment</p>
+                </div>
+                <div class="unit-highlights">
+                    <span class="highlight-item">✓ Top Floor</span>
+                    <span class="highlight-item">✓ Better Ventilation</span>
+                    <span class="highlight-item">✓ More Privacy</span>
+                </div>
+                <div class="unit-pricing">
+                    <div class="unit-price">₹24,000</div>
+                    <div class="unit-maintenance">+₹500 maintenance</div>
+                </div>
+                <a href="thirdF.html" class="unit-button primary">View Virtual Tour →</a>
+                <div class="unit-cta-note">Schedule a visit today!</div>
+            </div>
+        </div>
 
-    <div class="contact">CONTACT</div>
-    <div class="details">
-        <div>A BABU</div>
-        <div>Ph No: <a href="tel:9900262442" style="text-decoration: none;">9900262442</a></div>
-        <div>Address: No 92, 4th Main Road, Papanna Block, Ganganagar,</div>
-            <div>RTNagar Post, Bengaluru 560032.</div>
-    </div>
+        <div class="advance-notice">
+            <div class="notice-icon">ℹ️</div>
+            <p><strong>Advance Payment:</strong> 10 months rent required at the time of accommodation</p>
+        </div>
+    </section>
+
+    <!-- Terms & Instructions -->
+    <section class="section-container terms-section">
+        <h2 class="section-title">TENANT GUIDELINES</h2>
+        <div class="terms-container">
+            <div class="term-item">
+                <div class="term-icon">🏢</div>
+                <div class="term-content">
+                    <h4>Maintenance Charges</h4>
+                    <p>Includes housekeeping for common areas, electricity in common spaces, parking, and BWSSB water charges for kitchen</p>
+                </div>
+            </div>
+            <div class="term-item">
+                <div class="term-icon">💧</div>
+                <div class="term-content">
+                    <h4>Water Pumping</h4>
+                    <p>Water pumping charges to be shared among all tenants</p>
+                </div>
+            </div>
+            <div class="term-item">
+                <div class="term-icon">🏍️</div>
+                <div class="term-content">
+                    <h4>Parking Facility</h4>
+                    <p>Provision for 2 two-wheelers per unit</p>
+                </div>
+            </div>
+            <div class="term-item">
+                <div class="term-icon">🛗</div>
+                <div class="term-content">
+                    <h4>Elevator Usage</h4>
+                    <p>For passengers and hand-held luggage only</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2 class="section-title">GET IN TOUCH</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-label">Owner</div>
+                        <div class="contact-value">A BABU</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-label">Phone</div>
+                        <div class="contact-value">
+                            <a href="tel:9900262442" class="contact-link">+91 9900262442</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-label">Address</div>
+                        <div class="contact-value">
+                            No 92, 4th Main Road, Papanna Block,<br>
+                            Ganganagar, RTNagar Post,<br>
+                            Bengaluru 560032
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <h3>Ready to move in?</h3>
+                    <p>Contact us today to schedule a viewing of our available third floor unit</p>
+                    <a href="tel:9900262442" class="contact-button">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 AN Manzil. All rights reserved.</p>
+    </footer>
 </body>
 </html>
