@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AN Manzil</title>
+    <title>AN Manzil - Premium Apartments</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </head>
@@ -16,10 +16,10 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-overlay"></div>
-        <img class="hero-image" src="marble-m.jpg" alt="AN Manzil Luxury Apartments">
+        <img class="hero-image" src="terrace.jpg" alt="AN Manzil Luxury Apartments">
         <div class="hero-content">
             <h1 class="logo-title">AN MANZIL</h1>
-            <a href="#available" class="cta-button">Explore Available Units</a>
+            <a href="#schedule-visit" class="cta-button">Schedule a Visit</a>
         </div>
         <div class="scroll-indicator">
             <span>Scroll to explore</span>
@@ -30,7 +30,10 @@
     <!-- Featured Unit Banner -->
     <section class="featured-banner">
         <div class="featured-content">
-            <div class="featured-badge">🌟 NOW AVAILABLE</div>
+            <div class="featured-badge">
+                <span class="badge-icon">🌟</span>
+                <span class="badge-text">NOW AVAILABLE</span>
+            </div>
             <h2 class="featured-title">Third Floor Premium Unit</h2>
             <p class="featured-description">Experience elevated living with our newly available third floor apartment featuring modern amenities and stunning views</p>
             <div class="featured-details">
@@ -213,35 +216,78 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <div class="contact-container">
-            <h2 class="section-title">GET IN TOUCH</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-label">Owner</div>
-                        <div class="contact-value">A BABU</div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-label">Phone</div>
-                        <div class="contact-value">
-                            <a href="tel:9900262442" class="contact-link">+91 9900262442</a>
+    <!-- Schedule Visit Form Section -->
+    <section class="schedule-section" id="schedule-visit">
+        <div class="schedule-container">
+            <div class="schedule-header">
+                <h2 class="section-title">Schedule Your Visit</h2>
+                <p class="schedule-subtitle">Fill out the form below and we'll get back to you within 24 hours</p>
+            </div>
+            <div class="schedule-content">
+                <div class="form-container">
+                    <form id="visitForm" class="visit-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="10 digit mobile number" pattern="[0-9]{10}" maxlength="10" title="Please enter exactly 10 digits">
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-label">Address</div>
-                        <div class="contact-value">
-                            No 92, 4th Main Road, Papanna Block,<br>
-                            Ganganagar, RTNagar Post,<br>
-                            Bengaluru 560032
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Preferred Visit Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time Slot *</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select a time slot</option>
+                                <option value="10:00 AM - 12:00 PM">10:00 AM - 12:00 PM</option>
+                                <option value="12:00 PM - 2:00 PM">12:00 PM - 2:00 PM</option>
+                                <option value="2:00 PM - 4:00 PM">2:00 PM - 4:00 PM</option>
+                                <option value="4:00 PM - 6:00 PM">4:00 PM - 6:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Message (Optional)</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Any specific requirements or questions?"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">
+                            <span class="button-text">Schedule Visit</span>
+                            <span class="button-icon">→</span>
+                        </button>
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
                 </div>
-                <div class="contact-cta">
-                    <h3>Ready to move in?</h3>
-                    <p>Contact us today to schedule a viewing of our available third floor unit</p>
-                    <a href="tel:9900262442" class="contact-button">Call Now</a>
+                <div class="contact-info-sidebar">
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h3>Call Us</h3>
+                        <p><a href="tel:9900262442">+91 9900262442</a></p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Visit Us</h3>
+                        <p>No 92, 4th Main Road<br>Papanna Block, Ganganagar<br>RTNagar Post, Bengaluru 560032</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">👤</div>
+                        <h3>Owner</h3>
+                        <p>A BABU</p>
+                    </div>
+                    <div class="info-card highlight-card">
+                        <div class="info-icon">⚡</div>
+                        <h3>Quick Response</h3>
+                        <p>We respond to all inquiries within 24 hours</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -252,3 +298,5 @@
     </footer>
 </body>
 </html>
+
+    <script src="index.js"></script>
