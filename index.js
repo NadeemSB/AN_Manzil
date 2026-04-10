@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const formData = {
             name: document.getElementById('name').value,
             phone: document.getElementById('phone').value,
-            email: document.getElementById('email').value,
             date: document.getElementById('date').value,
             time: document.getElementById('time').value,
             message: document.getElementById('message').value || 'No additional message'

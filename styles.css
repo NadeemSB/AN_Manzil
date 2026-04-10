@@ -840,12 +840,41 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .schedule-section {
+        padding: 3rem 0;
+    }
+
+    .schedule-container {
+        padding: 0 1rem;
+    }
+
+    .schedule-header {
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+
     .form-row {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .form-container {
-        padding: 2rem;
+        padding: 1.5rem;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px;
+        padding: 0.875rem;
+    }
+
+    .submit-button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
     }
 
     .section-container {
@@ -941,7 +970,37 @@ body {
     }
 
     .form-container {
-        padding: 1.5rem;
+        padding: 1rem;
+        border-radius: 0;
+    }
+
+    .schedule-section {
+        padding: 2rem 0;
+    }
+
+    .schedule-container {
+        padding: 0 0.5rem;
+    }
+
+    .schedule-header {
+        padding: 0 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px;
+        padding: 0.75rem;
+    }
+
+    .submit-button {
+        padding: 0.875rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .visit-form {
+        gap: 1rem;
     }
 }
 
@@ -1005,11 +1064,14 @@ body {
 .schedule-section {
     background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     padding: 5rem 2rem;
+    overflow-x: hidden;
 }
 
 .schedule-container {
     max-width: 1400px;
     margin: 0 auto;
+    width: 100%;
+    padding: 0;
 }
 
 .schedule-header {
@@ -1035,6 +1097,8 @@ body {
     padding: 3rem;
     border-radius: 20px;
     box-shadow: var(--shadow-lg);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .visit-form {
@@ -1045,8 +1109,14 @@ body {
 
 .form-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
+}
+
+@media (min-width: 769px) {
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .form-group {
@@ -1071,6 +1141,8 @@ body {
     font-size: 1rem;
     transition: var(--transition);
     background: var(--bg-white);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .form-group input:focus,
@@ -1101,6 +1173,8 @@ body {
     justify-content: center;
     gap: 0.5rem;
     margin-top: 1rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .submit-button:hover {
